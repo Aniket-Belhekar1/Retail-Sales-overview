@@ -29,3 +29,6 @@ A complete end-to-end Power BI project analyzing **Retail Sales, Customer Behavi
 - Power Query  
 - Data Modeling  
 - Retail Analytics
+
+Link for snapshot: https://github.com/Aniket-Belhekar1/Retail-Sales-overview/blob/main/Snapshot%20of%20Retail%20Sales%20overwiew.png
+Link for Power BI file: https://github.com/Aniket-Belhekar1/Retail-Sales-overview/blob/main/Retail%20Sales%20Dashboard.pbix
