@@ -1,6 +1,6 @@
 # Retail Sales Analytics – SQL + Power BI Integrated Architecture
 
-## 🔄 Project Upgrade (v2 – SQL Integrated Architecture)
+## Project Upgrade (v2 – SQL Integrated Architecture)
 
 This project was upgraded from a Power BI-only dashboard to a layered data architecture:
 
@@ -14,7 +14,7 @@ Enhancements include:
 - Data Quality Scorecard in Power BI
 - End-to-end validation between SQL and DAX
 
-## 🏗 Architecture Overview
+## Architecture Overview
 
 ### Data Layers
 
@@ -38,7 +38,7 @@ Enhancements include:
 - Star schema modeling
 - Data Quality monitoring dashboard
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 - SQL data modeling (Star schema, PK/FK constraints)
 - Data governance & certified metric design
 - DAX (Time intelligence, segmentation, retention logic)
@@ -46,7 +46,7 @@ Enhancements include:
 - Data Quality monitoring framework
 - End-to-end validation across data layers
 
-## 🛡 Data Quality & Governance
+## Data Quality & Governance
 
 A dedicated Power BI scorecard monitors:
 
@@ -56,7 +56,7 @@ A dedicated Power BI scorecard monitors:
 - Revenue variance validation
 - Valid record percentage
 
-## 🎯 Key Outcomes
+## Key Outcomes
 
 - Transitioned from BI-only dashboard to layered SQL + BI architecture
 - Implemented controlled metric definitions to prevent revenue inconsistency
@@ -66,7 +66,7 @@ A dedicated Power BI scorecard monitors:
 
 This ensures data reliability before business reporting.
 
-## 📁 Tech Stack
+## Tech Stack
 - SQL Server (SSMS)
 - Power BI Desktop
 - DAX
@@ -74,7 +74,7 @@ This ensures data reliability before business reporting.
 - Star Schema Modeling
 - Data Governance & Validation
 
-## 📂 Repository Structure
+## Repository Structure
 
 ### /SQL
 - 01_Staging_Tables.sql
