@@ -76,13 +76,13 @@ This ensures data reliability before business reporting.
 
 ## 📂 Repository Structure
 
-- /SQL
+### /SQL
 - 01_Staging_Tables.sql
 - 02_Clean_Model.sql
 - 03_Certified_View.sql
 - 04_Analytical_Queries.sql
 
-- /PowerBI
+### /PowerBI
 - Retail_Sales_Dashboard.pbix
 
 Link for snapshot: https://github.com/Aniket-Belhekar1/Retail-Sales-overview/blob/main/Snapshot%20of%20Retail%20Sales%20overwiew.png
