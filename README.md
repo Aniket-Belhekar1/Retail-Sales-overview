@@ -1,34 +1,89 @@
-# Retail Sales Analytics – Power BI Dashboard
+# Retail Sales Analytics – SQL + Power BI Integrated Architecture
 
-A complete end-to-end Power BI project analyzing **Retail Sales, Customer Behavior, Product Profitability, and Store Performance** using a clean data model and DAX-heavy metrics.
+## 🔄 Project Upgrade (v2 – SQL Integrated Architecture)
 
-## 🔍 Key Insights
-- YoY Sales declined by 27.49% in 2025, driven by a drop in high-performing categories.
-- April recorded peak monthly sales (0.71M).
-- Fashion category contributed the highest revenue share.
-- Customer retention remained strong with consistent AOV across months.
-- MegaMart New Michele was the top-performing store; Peckmouth underperformed.
-- Product profitability varied widely — Book Television led sales, while National Watches had minimal contribution.
+This project was upgraded from a Power BI-only dashboard to a layered data architecture:
 
-## 📊 Dashboard Pages
-1. **Retail Overview** – Sales, Profit, YoY growth, category/store/payment insights  
-2. **Product & Pricing Analysis** – Margins, discount impact, scatter analysis, top products  
-3. **Customer Analytics** – Retention, AOV, segmentation, demographics, region analysis  
-4. **Store Performance** – Store ranking, category profitability, weekly trends, region/city insights  
+Raw Data (SQL Staging) → Clean Star Schema → Certified Revenue View → Power BI Reporting
+
+Enhancements include:
+
+- SQL staging layer implementation
+- Referential integrity (PK/FK constraints)
+- Certified revenue & profit logic in SQL
+- Data Quality Scorecard in Power BI
+- End-to-end validation between SQL and DAX
+
+## 🏗 Architecture Overview
+
+### Data Layers
+
+**1. Staging Layer (SQL)**
+- Raw data import
+- Data validation checks
+- No transformations applied
+
+**2. Clean Layer (Star Schema)**
+- Dimension tables (Customers, Products, Stores)
+- Fact table (Transactions)
+- Primary and foreign key enforcement
+
+**3. Certified Metric Layer**
+- Revenue and Gross Profit centralized in SQL view
+- Prevents metric drift
+- Used for validation and governance
+
+**4. Power BI Layer**
+- DAX measures for time intelligence and KPIs
+- Star schema modeling
+- Data Quality monitoring dashboard
 
 ## 🧠 Skills Demonstrated
-- DAX Measures (YoY, margin, retention, segmentation)  
-- Data Modeling (Star schema: Transactions, Products, Stores, Customers, Calendar)  
-- Profitability & customer segmentation logic  
-- Interactive visuals (decomposition tree, scatter, tooltips, slicers, play axis)  
-- Business storytelling & insight generation  
+- SQL data modeling (Star schema, PK/FK constraints)
+- Data governance & certified metric design
+- DAX (Time intelligence, segmentation, retention logic)
+- CTEs & Window functions (LAG, RANK)
+- Data Quality monitoring framework
+- End-to-end validation across data layers
+
+## 🛡 Data Quality & Governance
+
+A dedicated Power BI scorecard monitors:
+
+- Null record detection
+- Invalid discount validation
+- Referential integrity (orphan checks)
+- Revenue variance validation
+- Valid record percentage
+
+## 🎯 Key Outcomes
+
+- Transitioned from BI-only dashboard to layered SQL + BI architecture
+- Implemented controlled metric definitions to prevent revenue inconsistency
+- Enforced referential integrity at the database level
+- Validated SQL outputs against DAX measures for consistency
+- Designed a governance-focused Data Quality monitoring framework
+
+This ensures data reliability before business reporting.
 
 ## 📁 Tech Stack
-- Power BI  
-- DAX  
-- Power Query  
-- Data Modeling  
-- Retail Analytics
+- SQL Server (SSMS)
+- Power BI Desktop
+- DAX
+- Power Query
+- Star Schema Modeling
+- Data Governance & Validation
+
+## 📂 Repository Structure
+
+/SQL
+01_Staging_Tables.sql
+02_Clean_Model.sql
+03_Certified_View.sql
+04_Analytical_Queries.sql
+
+/PowerBI
+Retail_Sales_Dashboard.pbix
 
 Link for snapshot: https://github.com/Aniket-Belhekar1/Retail-Sales-overview/blob/main/Snapshot%20of%20Retail%20Sales%20overwiew.png
 Link for Power BI file: https://github.com/Aniket-Belhekar1/Retail-Sales-overview/blob/main/Retail%20Sales%20Dashboard.pbix
